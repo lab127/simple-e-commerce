@@ -39,7 +39,7 @@ export default function Navbar() {
             height={85}
             priority
           />
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-3">
             <button type="submit">
               <TbShoppingCart size={30} />
             </button>
@@ -62,7 +62,7 @@ export default function Navbar() {
           >
             <TbX size={30} />
           </button>
-          <ul className="flex flex-col md:flex-row h-full items-center pt-24 md:p-0 space-y-3 md:space-y-0 text-3xl md:text-xl">
+          <ul className="flex flex-col md:flex-row h-full items-center pt-24 md:p-0 space-y-3 md:space-y-0 text-3xl md:text-xl uppercase">
             {menu.map((link, index) => (
               <li key={index} className="md:px-2 px-4 py-1">
                 <Link onClick={hiddenClick} href={link.url}>
