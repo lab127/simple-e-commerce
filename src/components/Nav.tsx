@@ -71,7 +71,7 @@ export default function Navbar() {
               </li>
             ))}
             <button
-              className={`${!isHidden && "hidden"} md:px-2 px-4 py-1`}
+              className={`${!isHidden && "hidden"} md:flex md:px-2 px-4 py-1`}
               type="submit"
             >
               <TbShoppingCart size={30} />
