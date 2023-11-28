@@ -4,14 +4,14 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-5">
-        <div className="relative md:row-span-2 md:col-span-2">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-5 h-[500px]">
+        <div className="relative overflow-hidden h-60 md:h-auto md:row-span-2 md:col-span-2">
           <Link
             className="transition duration-500 ease-in hover:opacity-60"
             href={`#furniture`}
           >
             <Image
-              className="object-cover h-auto w-full dark:opacity-80 brightness-90"
+              className="object-cover object-center h-full w-full dark:opacity-80 brightness-90"
               src={`/assets/header/home-img-1.jpg`}
               alt="furnitures"
               width={0}
@@ -23,13 +23,13 @@ export default function Hero() {
             </p>
           </Link>
         </div>
-        <div className="relative md:row-span-2">
+        <div className="relative overflow-hidden h-60 md:h-auto md:row-span-2">
           <Link
             className="transition duration-500 ease-in hover:opacity-60"
             href={`#skincare`}
           >
             <Image
-              className="object-cover h-full w-auto dark:opacity-80 brightness-90"
+              className="object-cover object-center h-full w-full dark:opacity-80 brightness-90"
               src={`/assets/header/home-img-2.jpg`}
               alt="skincare"
               width={0}
@@ -41,13 +41,13 @@ export default function Hero() {
             </p>
           </Link>
         </div>
-        <div className="relative">
+        <div className="relative overflow-hidden h-60 md:h-auto">
           <Link
             className="transition duration-500 ease-in hover:opacity-60"
             href={`#kitchen`}
           >
             <Image
-              className="object-cover h-full w-auto dark:opacity-80 brightness-90"
+              className="object-cover object-center h-full w-full dark:opacity-80 brightness-90"
               src={`/assets/header/home-img-3.jpg`}
               alt="kitchen"
               width={0}
@@ -59,13 +59,13 @@ export default function Hero() {
             </p>
           </Link>
         </div>
-        <div className="relative">
+        <div className="relative overflow-hidden h-60 md:h-auto">
           <Link
             className="transition duration-500 ease-in hover:opacity-60"
             href={`#electronics`}
           >
             <Image
-              className="object-cover h-full w-auto dark:opacity-80 brightness-90"
+              className="object-cover object-center h-full w-full dark:opacity-80 brightness-90"
               src={`/assets/header/home-img-4.jpg`}
               alt="electronics"
               width={0}
