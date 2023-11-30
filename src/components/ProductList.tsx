@@ -18,9 +18,9 @@ export default function ProductList({ numberFeaturedProducts }: Props) {
       {filteredItems.map((item) => (
         <div
           key={item.id}
-          className="transition duration-300 ease-in border-2 border-black/25 hover:border-black flex flex-col justify-between"
+          className="transition duration-300 ease-in border-2 border-black/25 hover:border-black dark:border-stone-400/25 dark:hover:border-stone-400 flex flex-col justify-between"
         >
-          <Link className="p-2" href={`#${item.id}`}>
+          <Link className="p-0" href={`#${item.id}`}>
             <Image
               className="w-full h-auto"
               src={`/products/${item.img}`}
