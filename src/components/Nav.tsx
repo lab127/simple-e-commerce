@@ -53,7 +53,7 @@ export default function Navbar() {
         <div
           className={`${
             isHidden ? "hidden" : "flex flex-col"
-          } md:flex absolute w-full md:w-auto h-screen md:h-auto bg-gray-100 text-neutral-700 dark:text-neutral-300 dark:bg-black md:mt-10 md:mx-2 top-0`}
+          } md:flex z-50 fixed w-full md:w-auto h-full md:h-auto bg-gray-100 text-neutral-700 dark:text-neutral-300 dark:bg-black md:mt-10 md:mx-2 top-0`}
         >
           <button
             className="md:hidden flex justify-end px-7 py-11"
